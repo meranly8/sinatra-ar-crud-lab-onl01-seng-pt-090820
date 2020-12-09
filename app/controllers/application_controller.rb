@@ -52,7 +52,7 @@ class ApplicationController < Sinatra::Base
 
   #delete
   delete '/articles/:id' do
-    Article.destory(id: params[:id])
+    Article.destory(params[:id])
 
     redirect '/articles'
   end
